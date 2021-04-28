@@ -14,7 +14,7 @@ export default function Projects({ data }) {
         <h3>Projects & Websites I've Created</h3>
         <div className={projects}>
           {myprojects.map(project => (
-            <Link to={`/projects/${project.frontmatter.slug}`}>
+            <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
               <div>
                 <GatsbyImage
                   image={getImage(
